@@ -1,3 +1,5 @@
+package org.example.jasan;
+
 import java.sql.*;
 
 public class JDBCFirst {
@@ -11,14 +13,12 @@ public class JDBCFirst {
     private static final String SQL_DELETE_USERS = "delete from users where id = 6";
 
     public static void main(String[] args) {
-
-
         try {
             Class.forName("org.postgresql.Driver");
             Connection connection = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
             if (connection != null){
                 Statement statement = connection.createStatement();
-                statement.executeUpdate(SQL_DELETE_USERS);
+                //statement.executeUpdate(SQL_DELETE_USERS);
                 ResultSet resultSet = statement.executeQuery(SQL_GET_ALL_USERS);
                 while (resultSet.next()){
                     System.out.print(resultSet.getString("id") + " ");
