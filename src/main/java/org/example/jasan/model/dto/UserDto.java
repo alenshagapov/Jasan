@@ -1,4 +1,4 @@
-package org.example.jasan.model;
+package org.example.jasan.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,5 +1,3 @@
-package org.example.jasan;
-
 import java.sql.*;
 
 public class JDBCFirst {
