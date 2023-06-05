@@ -23,4 +23,8 @@ public class Users {
     private String surname;
     private int age;
 
+    public String getUserInfo(){
+        return this.surname + " " + this.name + " " + this.age;
+    }
+
 }
