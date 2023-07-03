@@ -2,17 +2,15 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Users</title>
+    <title>Shopping Card</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
 
 <div class="container">
-    <ul class="list-group" th:each="user : ${users}">
-        <li class="list-group-item" th:text="${user.getUserInfo()}"></li>
-    </ul>
-    <a type="button" th:href="@{/shoppingCard/{userId}(userId = ${userId})}">GO</a>
+    <h1>USERID</h1>
+    <p th:text="${userId}"></p>
 </div>
 
 </body>

@@ -19,6 +19,7 @@ public class UserFrontController {
     @GetMapping("/users")
     public String showUsersPage(Model model){
         model.addAttribute("users",userService.getAll());
+        model.addAttribute("userId",1233334);
         return "users";
     }
 
